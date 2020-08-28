@@ -1,6 +1,19 @@
 import 'package:flutter/material.dart';
 
+class Bicycle {
+  int speed;
+  int cadence;
+
+  Bicycle(this.speed, this.cadence);
+
+  @override
+  toString() => 'bike speed $speed, cadence $cadence';
+}
+
 void main() {
+  var bike = Bicycle(1, 2);
+  print(bike);
+
   runApp(MyApp());
 }
 
